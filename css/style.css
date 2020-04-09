@@ -1,0 +1,250 @@
+/* ELIMINANDO TODOS LOS ETILOS QUE TRAE EL NAVEGADOR POR DEFECTO*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* EMPIEZA EL DISEÑO DEL HEADER*/
+header {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+    position: relative;
+}
+
+/* HEADER DISEÑO DEL NOMBRE DE LA PAGINA*/
+header h1 {
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+header h1 span {
+    line-height: 90px;
+    margin-right: 20px;
+}
+header h1 span.zona {
+    color: rgb(0, 17, 255);
+}
+header h1 span.colonial {
+    color: white;
+}
+header h1 span.digital {
+    color: red;
+}
+
+/*HEADER DISEÑO DEL MENU DE LA PAGINA*/
+header nav {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 213, 166, 0.5);
+}
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    text-decoration: none;
+    margin: 0px 3px;
+    text-transform: uppercase;
+}
+.myButton {
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 25px; 
+    padding: 10px; 
+    font-family: Georgia, serif; 
+    font-weight: bold; 
+    font-style: normal; 
+    font-variant: normal; 
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    border: 3px solid rgb(28, 110, 164); 
+    display: inline-block;
+}
+.myButton:hover {
+    background: #1C6EA4; 
+}
+.myButton:active {
+    background: #144E75; 
+}
+
+/*MAIN DE LA PAGINA PRINCIPAL*/
+main {
+    float: left;
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 65%;
+    margin:  0px auto;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    margin-left: 35px;
+    background: #FFD6A6;
+    padding: 15px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(0,0,0,0.3),0px 0px 1px #FFFFFF inset,0px -3px 2px rgba(0,0,0,0.25) inset;
+}
+main h2 {
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+main .foto {
+    max-width: 30%;
+    height: 400px;
+}
+main .foto img, img {
+    max-width: 100%;
+    height: 100%;
+    -webkit-border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
+    border: 10px inset rgb(255, 206, 166);
+    transition: transform 1s;
+}
+main .foto img:hover, img {
+    transform: scale(1.01);
+}
+main .texto, p {
+    padding: 50px;
+    text-align: justify;
+    max-width: 50%;
+    max-height: auto;
+}
+@media only screen and (max-width: 700px){
+    main {
+       min-width: 90% !important;
+    }
+    aside {
+       width: 100% !important;
+    }
+}
+@media only screen and (min-width: 1000px){
+    main .foto {
+        height: 300px;
+    }
+}
+/* MAIN DE LA PAGINA DE MUSEOS */
+main {
+    text-align: center;
+}
+main div {
+    width: 49%;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+main div img {
+    width: 80%;
+    max-height: 300px;
+}
+main div.flotante p, div.restaurante p, div.contactos p, p {
+    max-width: 100%;
+    max-height: 400px;
+    padding: 20px 50px;
+    overflow-y: scroll;
+}
+main div.restaurante p, div.contactos p, p {
+    overflow: hidden;
+}
+@media only screen and (max-width: 1000px){
+    main div {
+        width: 100%;
+    }
+}
+main a.firma {
+    text-decoration: none;
+    color: rgb(153, 255, 230);
+    text-shadow: 1px 1px 3px black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main::before, main div::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*ASIDE DE LA PAGINA*/
+aside {
+    margin-top: 20px;
+    float: right;
+    width: 30%;
+}
+aside form, aside article {
+    margin-bottom: 25px;
+    display: block;
+    width: 90%;
+    margin:  0px auto;
+    margin-bottom: 35px;
+    background: #FFD6A6;
+    padding: 15px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(0,0,0,0.3),0px 0px 1px #FFFFFF inset,0px -3px 2px rgba(0,0,0,0.25) inset;
+}
+aside article h2 {
+    margin-bottom: 10px;
+}
+label, input[type ="text"], input[type ="email"], input[type ="password"]{
+    display: box;
+    white-space: 95%;
+    margin: 4px 0px;
+}
+input[type ="text"], input[type ="email"], input[type ="password"]{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+button{ 
+        margin: 5px 0px;
+        display: box;
+        border-radius: 2px;
+        color: white;
+        background: #007ee5;
+        border: 1px solid #156785;
+        cursor: pointer;
+        padding: 6px;
+}
+aside img.eventos {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+aside::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*FOOTER DE LA PAGINA*/
+footer {
+    float: left;
+    width: 100%;
+}
+footer p.footer {
+	background-color: rgb(48, 48, 48);
+	color: #fff;
+	text-align: center;
+    margin-top: 0px;
+    padding: 25px;
+    font-size: 18px;
+    min-width: 100%;
+}
+footer::before {
+    content: '';
+    display: block;
+    clear: both;
+}

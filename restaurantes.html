@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Colonial Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--BANNER DE LA PAGINA CON SU MENU-->
+    <header>
+        <h1><span class="zona">Zona</span><span class="colonial">Colonial</span><span class="digital">Digital</span></h1>
+        <nav>
+            <ul>
+                <li><a class="myButton" href="index.html">Inicio</a></li>
+                <li><a class="myButton" href="museos.html">Museos</a></li>
+                <li><a class="myButton" href="restaurantes.html">Restaurantes</a></li>
+                <li><a class="myButton" href="contactos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+ <!-- PARTE DE LOS RESTAURANTES DE LA ZONA -->
+ <main>
+  <div class="restaurante">
+    <h2>Buche Perico</h2>
+    <img src="img/bucheperico.jpg" alt="buche perico">
+    <p>
+      Ubicado C/ El Conde No. 53, Zona Colonial. <br>
+      Horario: Lunes a Domingos <br>
+      12:00am-12:00pm
+    </p>
+  </div>
+  <div class="restaurante">
+    <h2>Lulú tasting bar</h2>
+    <img src="img/lulutasting.jpg" alt="lulu tasting bar">
+    <p>
+      Ubicado en Parque Billini <br>
+      Horario: Lunes a Domingos <br>
+      10:00AM-3:00PM
+    </p>
+  </div>
+  <div class="restaurante">
+    <h2>Mesón Bari</h2>
+    <img src="img/mesonbari.jpg" alt="meson bari">
+    <p>
+      Ubicado en calle hostos 302 <br>
+      Horario: Lunes a Domingos <br>
+      12:00PM-12:00AM
+    </p>
+  </div>
+  <div class="restaurante">
+    <h2>Santoña Gastro Bar Colonial</h2>
+    <img src="img/santona.jpg" alt="Santoña Gastro bar colonial">
+    <p>
+      Ubicado en calle Arzobispo Meriño <br>
+      Horario: Lunes a Domingos <br>
+      6:00PM-12:00AM
+    </p>
+  </div>
+</main>
+    <!--BARRA LATAREAL DE LA PAGINA-->
+    <aside>
+      <form method="POST" action="form.php">
+        <h2>Obtener Internet Gratis</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" name="nombre" id="name" autocomplete="off" required><br>
+        <label for="lastname">Apellido:</label>
+        <input type="text" name="apellido" id="lastname" autocomplete="off" required><br>
+        <label for="emailRegister">Correo Electrónico:</label>
+        <input type="email" name="correo" id="emailRegister" autocomplete="off" required><br>
+        <label for="passwordRegister">Contraseña:</label>
+        <input type="password" name="clave" id="passwordRegister" autocomplete="off" required><br>
+        <button type="submit">Enviar datos</button>
+    </form>
+      <article>
+          <h2>Eventos de la Zona Colonial</h2>
+          <img class="eventos" src="img/evento.jpg" alt="evento cancelado por coronavirus"> 
+      </article>
+  </aside>
+
+    <!--PIE DE LA PAGINA-->
+    <footer>
+        <p class="footer">Desarrollado por Nairobi Nivar y Hernan Demorizi - Zona Colonial Digital 2020 - Todos los derechos reservados &copy;.</p>
+    </footer>
+</body>
+</html>
+
